@@ -1,0 +1,27 @@
+{
+  "name": "bourbon-neat-bitter-refills",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorinSenoner/Playground.git"
+  },
+  "keywords": [
+    "bitter",
+    "refill",
+    "neat",
+    "bourbon"
+  ],
+  "author": "florin senoner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorinSenoner/Playground/issues"
+  },
+  "homepage": "https://github.com/FlorinSenoner/Playground#readme"
+}
