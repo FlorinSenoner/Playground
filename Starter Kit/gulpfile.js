@@ -55,7 +55,7 @@ gulp.task('sass_clean', function () {
         .pipe(sourcemaps.init()) //init sourcemaps
         .pipe(sass(optionsSass).on('error', sass.logError)) // Run Sass on those files
         .pipe(autoprefixer(optionsAutoprefixer)) //autoprefix css files
-        .pipe(uncss({ //remouve unused css code
+        .pipe(uncss({ //remove unused css code
             html: ['index.html', 'posts/**/*.html', 'http://example.com']
         }))
         .pipe(cssnano())
