@@ -27,8 +27,7 @@
 }
 
 @mixin normalize($include: (all), $exclude: ()) {
-  // Initialize the helper function by passing it this mixin's parameters.
-  $init: _normalize-include($include, $exclude);
+  $init: _normalize-include($include, $exclude); // Initialize the helper function by passing it this mixin's parameters.
 
   // If we've customized any font variables, we'll need extra properties.
   @if $base-font-size != 16px

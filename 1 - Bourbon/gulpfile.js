@@ -13,8 +13,6 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var uncss = require('gulp-uncss');
-var vfs = require('vinyl-fs');
-var converter = require('sass-convert');
 
 // ----- variables ----- add more!
 var inputSass = './app/sass/**/*.sass';
