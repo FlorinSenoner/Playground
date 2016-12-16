@@ -1,0 +1,24 @@
+//-  Florin Senoner
+    Copyright 2016
+
+    todo:
+
+
+doctype html
+html(lang="en")
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    title Bourbons
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    //build:css sass/styles.min.css
+    link(rel='stylesheet' href='sass/index.css')
+    //endbuild
+body.page
+    include pug/top-nav
+    include pug/hero
+
+
+    //build:js js/main.min.js
+    script(src='js/app.js' type='text/javascript' charset='utf-8' async defer)
+    //endbuild

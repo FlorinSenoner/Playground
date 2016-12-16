@@ -1,21 +1,58 @@
 <!DOCTYPE html>
-<html></html>
+<html lang="en"></html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/index.css">
+  <title>Bourbons</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--build:css sass/styles.min.css-->
+  <link rel="stylesheet" href="sass/index.css">
   <!--endbuild-->
 </head>
-<body>
-  <div class="boxes">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+<body class="page">
+  <header class="navigation" role="banner">
+    <div class="navigation-wrapper"><a class="logo" href="javascript:void(0)"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo Image"></a><a class="navigation-menu-button" id="js-mobile-menu" href="javascript:void(0)">MENU</a>
+      <nav role="navigation">
+        <ul class="navigation-menu show" id="js-navigation-menu">
+          <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+          <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+          <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+          <li class="nav-link more" id="js-navigation-more"><a href="javascript:void(0)">More</a>
+            <ul class="submenu">
+              <li><a href="javascript:void(0)">Submenu Item</a></li>
+              <li><a href="javascript:void(0)">Another Item</a></li>
+              <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+                <ul class="submenu">
+                  <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                  <li><a href="javascript:void(0)">Another Item</a></li>
+                </ul>
+              </li>
+              <li class="more"><a href="javascript:void(0)">Another submenu</a>
+                <ul class="submenu">
+                  <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                  <li><a href="javascript:void(0)">An Item</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="navigation-tools">
+        <div class="search-bar">
+          <form role="search">
+            <input type="search" placeholder="Enter Search">
+            <button type="submit"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="image-gradient-dynamic"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    <div class="overlay"></div>
+    <div class="copy">
+      <p>Dynamic height container</p>
+    </div>
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <!--build:js js/main.min.js-->
   <script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
   <!--endbuild-->

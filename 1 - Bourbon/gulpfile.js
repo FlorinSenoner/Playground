@@ -18,7 +18,7 @@ var converter = require('sass-convert');
 
 // ----- variables ----- add more!
 var inputSass = './app/sass/**/*.sass';
-var outputCSS = './app/css';
+var outputCSS = './app/sass';
 var optionsAutoprefixer = {
     browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
 };
@@ -79,6 +79,10 @@ gulp.task('browserSync', function() {
 
 gulp.task('watch', function() {
     gulp.watch(inputSass, ['sass']) // Watch the input folder for change, and run `sass` task when something happens
+    .on('change', function(event) { // When there is a change, log a message in the console
+      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+    });
+    gulp.watch('app/sass/**/*.scss', browserSync.reload)
     .on('change', function(event) { // When there is a change, log a message in the console
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
