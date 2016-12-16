@@ -16,7 +16,7 @@ var uncss = require('gulp-uncss');
 
 // ----- variables ----- add more!
 var inputSass = './app/sass/**/*.sass';
-var outputCSS = './app/css';
+var outputCSS = './app/sass';
 var optionsAutoprefixer = {
     browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
 };
