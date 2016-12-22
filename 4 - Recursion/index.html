@@ -8,19 +8,12 @@
 <body>
  
 <script>
+// http://erwnerve.tripod.com/recintro.htm
+
 // calculate Factorial of n
 function factorial (n) {
   if (n <= 1) return 1 // end condition
   else return factorial (n-1) * n;
-}
-
-// print numbers from 0 to n
-function print (n) {
-  if (n <= 0 ) console.log(0)
-  else {
-    print (n - 1);
-    console.log(n);
-  }
 }
 
 // print numbers from n to 0
@@ -32,13 +25,40 @@ function printReverse (n) {
   }
 }
 
+// print numbers from 0 to n
+function print (n) {
+  if (n <= 0 ) console.log(0)
+  else {
+    print (n - 1);
+    console.log(n);
+  }
+}
+
 // reverses a string str
 function reverseString (str) {
   if (str === "") return ""
   else return reverseString (str.substr(1)) + str.charAt(0)
 }
 
-console.log(reverseString ("my name is"));
+// reverses a string str and return number of spaces in string
+function reverseStringAndSpaces (str) {
+  if (str === "") return ""
+  else reverseString (str.substr(1)) + str.charAt(0)
+}
+
+// checks if n is prime (d is the number below n). this implemantation is only for demonstration and not recommendet 
+function checkPrime (n, d) {
+  if (n <= 2) return true
+  if (d === 1) return true
+  else {
+    if (n % d === 0 ) return false
+    else return checkPrime (n, d-1)
+  }
+}
+
+// http://erwnerve.tripod.com/magic.htm
+
+console.log(checkPrime (3, 2));
 
 </script>
 </body>
