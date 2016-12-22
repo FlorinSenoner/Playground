@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>recursion</title>
+</head>
+<body>
+ 
+<script>
+// calculate Factorial of n
+function factorial (n) {
+  if (n <= 1) return 1 // end condition
+  else return factorial (n-1) * n;
+}
+
+// print numbers from 0 to n
+function print (n) {
+  if (n <= 0 ) console.log(0)
+  else {
+    print (n - 1);
+    console.log(n);
+  }
+}
+
+// print numbers from n to 0
+function printReverse (n) {
+  if (n <= 0 ) console.log(0)
+  else {
+    console.log(n);
+    printReverse (n - 1);
+  }
+}
+
+// reverses a string str
+function reverseString (str) {
+  if (str === "") return ""
+  else return reverseString (str.substr(1)) + str.charAt(0)
+}
+
+console.log(reverseString ("my name is"));
+
+</script>
+</body>
+</html>
