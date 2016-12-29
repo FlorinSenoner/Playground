@@ -1,6 +1,6 @@
 var axios = require('axios')
 
-const OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=f1f565951622af80fdadec2ca2e7c957&units=metric&type=like'
+const OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=f1f565951622af80fdadec2ca2e7c957&units=metric&type=accurate'
 
 // http://api.openweathermap.org/data/2.5/weather?q=Rome,it&appid=f1f565951622af80fdadec2ca2e7c957&units=metric&type=like
 
@@ -16,7 +16,8 @@ module.exports = {
         return res.data.main.temp
       }
     }, function (res) {
-      throw new Error(res.data.message)
+      // debugger
+      throw new Error(res.message)
     })
   }
 }
